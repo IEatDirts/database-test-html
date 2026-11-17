@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+coverage/
+open-next/
+wrangler/
+wrangler
+open-next
+env*
+node_modules
+dist
+build
+coverage
