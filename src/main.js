@@ -13,20 +13,16 @@ async function testDatabase() {
 
     const { data, error } = await supabase
         .from("Generic")
-        .select("*")
-        .limit(1);
+        .select("generic_name")
+        .limit(1)
+        .single();
 
     if (error) {
         testText.textContent = "Error: " + error.message;
         return;
     }
 
-    if (data.length === 0) {
-        testText.textContent = "Connected! (Table is empty or RLS policy is blocking read access)";
-        return;
-    }
-
-    testText.textContent = "Success: " + JSON.stringify(data[0]);
+    textSpot.textContent = data.generic_name;
 }
 
 export function init() {
