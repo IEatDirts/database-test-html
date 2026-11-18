@@ -1,6 +1,6 @@
 import { createClient } from "https://jsdelivr.net";
 
-const supabase = createClient("https://pxgqeoldgxmimhpvtydt.supabase.co", "sb_publishable_m2l_CBj5zJHOJhIL2_eehw_J9UD-6hq");
+const supabase = createClient("https://pxgqeoldgxmimhpvtydt.supabase.co/rest/v1/", "sb_publishable_m2l_CBj5zJHOJhIL2_eehw_J9UD-6hq");
 
 export function updateStartButton() {
     const startButton = document.getElementById("start_btn");
