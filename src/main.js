@@ -21,7 +21,7 @@ async function testDatabase() {
         return;
     }
 
-    textSpot.textContent = data.generic_name;
+    testText.textContent = data.generic_name;
 }
 
 export function init() {
@@ -33,4 +33,5 @@ export function init() {
             updateStartButton();
         });
     });
+    testDatabase();
 }
