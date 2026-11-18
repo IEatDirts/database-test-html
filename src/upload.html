@@ -1,0 +1,36 @@
+<!--This is pretty much identical to index.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin Login</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="supabase.js"></script>
+        <script type="module">
+            import { initUpload } from "./upload.js";
+            initUpload();
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <img src="images/logo_v1.png">
+            <h1>Admin Login</h1>
+            
+            <div id="login_section">
+                <p>Sign in with your Supabase account</p>
+                <input type="email" id="email_input" placeholder="Admin Email" /><br><br>
+                <input type="password" id="password_input" placeholder="Password" /><br><br>
+                <button id="login_btn">Log In</button>
+            </div>
+            
+            <div id="upload_section" style="display: none;">
+                <p id="user_info"></p>
+                <button id="logout_btn">Log Out</button>
+            </div>
+
+            <p id="upload_status"></p>
+            <a href="index.html" style="margin-top: 20px; display: inline-block;">Back to Game</a>
+        </div>
+    </body>
+</html>
